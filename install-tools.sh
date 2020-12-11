@@ -60,4 +60,4 @@ for tool_url in $TOOLS_URL_LIST; do
   sudo git clone $tool_url || \
     sudo git clone $tool_url $(basename $tool_url)-$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 8 | head -n 1) || \
     :
-done
+done 
