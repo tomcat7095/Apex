@@ -17,4 +17,4 @@ validate:
 	packer validate $(PACKER_CONFIG_FILE)
 
 ami: validate
-	packer build -var source_ami_id=$(SOURCE_AMI_ID) $(PACKER_CONFIG_FILE)
+	packer build -var source_ami_id=$(SOURCE_AMI_ID) $(PACKER_CONFIG_FILE) 
