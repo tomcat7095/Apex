@@ -1,0 +1,22 @@
+Use the following credentials to access our Lion App
+
+name: IAC Lion App
+  uses: aws-actions/configure-aws-credentials@v1
+  with:
+    aws-access-key-id: BNSTI44QH8DHBIACT
+    aws-secret-access-key: eGAfeEXtnFEMI/K7MDENG/bPxRfiCYTeSIaC
+    aws-region: us-east-1
+
+name: Run CodeBuild
+  uses: aws-actions/aws-codebuild-run-build@v1.0.3
+  with:
+    project-name: Lion
+    buildspec-override: App/Lion/Lionbuild.yaml
+    env-vars-for-codebuild: |
+      custom,
+      requester,
+      event-name
+  env:
+    custom: my environment variable
+    requester: Tom@iac.com
+    event-name: github.Lion_Project
