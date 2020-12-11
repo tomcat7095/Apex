@@ -18,5 +18,5 @@ name: Run CodeBuild
       event-name
   env:
     custom: IAC Lab
-    requester: TomC@iac.com
+    requester: Tom.Cat@iac.com
     event-name: github.Lion_Project
