@@ -1,6 +1,6 @@
 Use the following credentials to access our Lion App
 
-name: IAC Lion App
+name: Lion App
   uses: aws-actions/configure-aws-credentials@v1
   with:
     aws-access-key-id: BNSTI44QH8DHBIACT
